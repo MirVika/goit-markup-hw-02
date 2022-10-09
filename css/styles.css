@@ -1,0 +1,52 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --acent-text-color: #2196F3;
+    --secondary-acent-text-color: #ffffff;
+}
+
+
+body {
+  background-color: #ffffff;
+  color:#757575;
+}
+
+/* logo */
+
+.logo {color:#2196F3;}
+span {color:#000000;}
+
+/* site nav */
+
+.list {list-style: none;}
+.site-nav a {color: var(--title-text-color);}
+.site-nav.list a:hover,
+.site-nav.list a:focus {color: var(--acent-text-color);}
+.contacts a {color:var(--primary-text-color)}
+
+/* hero */
+.hero-title {color: #ffffff;}
+/* back color to see white letters */
+.background {background-color: #2196F3;}
+
+/* section */
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* footer */
+.contacts {color:var(--primary-text-color);}
+
+
+
+
+
+/* цвет основного текста #757575
+/* вторичный цвет текста #212121
+/* цветлого черный #000000
+/* цвет лого голубой #2196F3
+/* белый цвет  #FFFFFF
+/* бекграунд футер цвет черный #2F303A
+/* бэкграунд для кнопок портфолио #F5F4FA
+/* цвет фона страницы вторичный #F5F4FA */
+/* цвет фона страницы основной #FFFFFF */
