@@ -11,30 +11,40 @@ body {
   background-color: #ffffff;
   color:#757575;
   font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: calc(24/14);
 }
+
 
 /* logo */
 
 .logo {color:#2196F3;
+text-decoration: none;
 font-family: Raleway, sans-serif;
 font-family: 'Raleway';
 font-weight: 700;
 font-size: 26px;
 line-height: calc(31/26);}
-span {color:#000000;}
+span {color:#000000;
+}
 
 
 /* site nav */
 
 .list {list-style: none;}
 .site-nav a {color: var(--title-text-color);
+text-decoration: none;
 font-family: 'Roboto';
 font-weight: 500;
 font-size: 14px;
 line-height: calc(16/14);}
 .site-nav.list a:hover,
 .site-nav.list a:focus {color: var(--acent-text-color);}
-.contacts a {color:var(--primary-text-color)}
+
+.contacts a {color:var(--primary-text-color);
+             text-decoration: none;
+             }
 
 /* hero */
 .hero-title {color: #ffffff;
@@ -60,10 +70,6 @@ line-height: calc(16/14);}
 }
 
 
-
-/* footer */
-.contacts {color:var(--primary-text-color);}
-
 /* button */
 
 .button {color: var(--secondary-acent-text-color);
@@ -76,13 +82,67 @@ line-height: calc(16/14);}
 
 .primary.button {color: var(--secondary-acent-text-color);
                  background-color: var(--acent-text-color);
-                border-color: var(--acent-text-color);}
+                 border-color: var(--acent-text-color);
+                 font-weight: 500;
+                 font-size: 16px;
+                 line-height: calc(26/16);
+                 box-shadow: X0 Y2 B2 S0 #000000, X0 Y1 B2 S0 #000000;}
 
 .secondary.button {color: var(--title-text-color) ;
                    background-color: var(--secondary-background-color);
-                   border-color: var(--secondary-background-color);}
+                   border-color: var(--secondary-background-color);
+                   font-weight: 500;
+                   font-size: 16px;
+                   line-height: calc(26/16);}
 
+/* benefits */
+
+.benefits-list .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+}
+
+/* team */
+
+.team .title {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19/16);
+}
+.our-team {
+    background-color: var(--secondary-background-color);
+}
+
+
+/* footer */
+.contact a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+
+
+
+    
+}
 /* portfolio */
+/* examples */
+
+.examples .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);
+}
+
+.examples .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30/16);
+}
+
+
 
 
 
@@ -99,3 +159,4 @@ line-height: calc(16/14);}
 /* бэкграунд для кнопок портфолио #F5F4FA
 /* цвет фона страницы вторичный #F5F4FA */
 /* цвет фона страницы основной #FFFFFF */
+
