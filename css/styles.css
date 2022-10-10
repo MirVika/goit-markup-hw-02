@@ -120,11 +120,11 @@ line-height: calc(16/14);}
 /* footer */
 .contact a {
     color: var(--primary-text-color);
-    text-decoration: none;
+    text-decoration: none;  
+}
 
-
-
-    
+footer a {
+    font-style: normal;
 }
 /* portfolio */
 /* examples */
