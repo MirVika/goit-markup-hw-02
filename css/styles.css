@@ -4,6 +4,8 @@
     --acent-text-color: #2196F3;
     --secondary-acent-text-color: #ffffff;
     --secondary-background-color: #F5F4FA;
+    --secondary-bcd-button-color: #188CE8;
+    --bcd-black: #2F303A;
 }
 
 
@@ -13,7 +15,6 @@ body {
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
-  line-height: calc(24/14);
 }
 
 
@@ -45,16 +46,23 @@ line-height: calc(16/14);}
 .contacts a {color:var(--primary-text-color);
              text-decoration: none;
              }
+.contacts.list a:hover,
+.contacts.list a:focus {
+    color: var(--acent-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+}
 
 /* hero */
 .hero-title {color: #ffffff;
-            font-family: 'Roboto'
             font-weight: 900;
             font-size: 44px;
             line-height: calc(60/44);
             text-align: center;}
-/* back color to see white letters */
-.background {background-color: #2196F3;}
+
+.hero {background-color: var(--bcd-black);}
 .primary.button {
     color: var(--secondary-acent-text-color);
     background-color: var(--acent-text-color);}
@@ -72,9 +80,13 @@ line-height: calc(16/14);}
 
 /* button */
 
-.button {color: var(--secondary-acent-text-color);
+.button :active {
+         color: var(--secondary-bcd-button-color)
+}
+        {color: var(--secondary-acent-text-color);
          background-color: var(--acent-text-color);
-         border-color: var(--acent-text-color) ;
+         border-color: var(--acent-text-color);
+         
         font-family: 'Roboto';
         font-weight: 700;
         font-size: 16px;
@@ -88,7 +100,13 @@ line-height: calc(16/14);}
                  line-height: calc(26/16);
                  box-shadow: X0 Y2 B2 S0 #000000, X0 Y1 B2 S0 #000000;}
 
-.secondary.button {color: var(--title-text-color) ;
+.secondary.button:focus,
+.secondary.button:hover {
+    color: var(--secondary-acent-text-color);
+    background-color: var(--acent-text-color);
+}
+
+.secondary.button{color: var(--title-text-color) ;
                    background-color: var(--secondary-background-color);
                    border-color: var(--secondary-background-color);
                    font-weight: 500;
@@ -103,11 +121,28 @@ line-height: calc(16/14);}
     font-size: 14px;
     line-height: calc(16/14);
 }
+.visual-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.benefits-list {
+    list-style: none;
+}
+
 
 /* team */
 
-.team .title {
-    color: var(--primary-text-color);
+.team-title {
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
@@ -122,10 +157,24 @@ line-height: calc(16/14);}
     color: var(--primary-text-color);
     text-decoration: none;  
 }
+.contact.list a:hover,
+.contact.list a:focus {
+    color: var(--acent-text-color);
+}
+.address a {
+    color: var(--secondary-acent-text-color);
+}
 
 footer a {
     font-style: normal;
 }
+.footer-logo {
+    color: var(--secondary-acent-text-color);
+}
+.background-footer {
+    background-color: var(--bcd-black);
+}
+
 /* portfolio */
 /* examples */
 
@@ -134,13 +183,29 @@ footer a {
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36/18);
+    letter-spacing: 0.06em;
 }
 
 .examples .text {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(30/16);
+    letter-spacing: 0.03em;
 }
+.examples {
+    list-style: none;
+}
+
+.project-list{
+        list-style: none;
+}
+.project-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    letter-spacing: 0.03em;
+}
+
 
 
 
